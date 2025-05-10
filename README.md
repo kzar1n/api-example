@@ -67,8 +67,16 @@ Uma aplicação simples "Hello World" construída com Java 21, Spring Boot e seg
    ```
 
 3. Acesse o endpoint:
+   ```bash
+   GET http://localhost:8081/api/v1/greeting/{uuid}
    ```
-   GET http://localhost:8080/api/v1/greeting
+   Substitua `{uuid}` por um UUID válido, como `123e4567-e89b-12d3-a456-426614174000`.
+
+4. Exemplo de resposta:
+   ```json
+   {
+       "message": "Hello, World! Your UUID is: 123e4567-e89b-12d3-a456-426614174000"
+   }
    ```
 
 ## Estrutura do Projeto
@@ -76,3 +84,15 @@ Uma aplicação simples "Hello World" construída com Java 21, Spring Boot e seg
 **domain:** Contém as entidades do domínio.  
 **application:** Contém os casos de uso.  
 **adapters/controllers:** Contém os controladores REST.
+
+## Testes
+Para executar os testes automatizados, use o comando:
+```bash
+mvn test
+```
+
+Os testes verificam o comportamento da API, incluindo a validação do UUID no endpoint.
+
+---
+
+Agora o `README.md` está atualizado com as informações sobre o novo comportamento da API e instruções detalhadas para uso e testes. 😊
