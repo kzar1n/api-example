@@ -1,0 +1,29 @@
+# Arquivos temporários do sistema operacional
+.DS_Store
+Thumbs.db
+
+# Arquivos de log
+*.log
+
+# Arquivos temporários do Maven
+target/
+
+# Configurações locais do IDE
+*.iml
+.idea/
+.vscode/
+
+# Arquivos temporários do sistema
+*.tmp
+*.swp
+*.swo
+
+# Arquivos de build
+*.class
+
+# Arquivos de cache
+*.cache
+*.out
+
+# Arquivos de configuração locais
+.env
